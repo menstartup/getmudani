@@ -1,0 +1,8 @@
+<p>
+  user-form works!
+</p>
+<input type="text" placeholder="user name" [(ngModel)]="name">;
+<h3 [style.color] = "ishighlight ? 'red' : 'black'">Your name is {{name}}</h3>
+<h2 [style.color] = "name.length %2 === 0? 'blue' : 'red'">chan den le do {{name}}</h2>
+<div [class]="ishighlight ? 'circle' : 'square'"></div>
+<div [class.circle] = "!ishighlight"></div>
